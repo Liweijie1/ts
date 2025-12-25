@@ -7,7 +7,7 @@ function id<Type>(value: Type): Type {
 }
 const num = id<number>(123);
 const str = id<string>('hello');
-const bool = id(true); // 类型推断，自动推断为boolean类型
+const bool = id(true); // 类型推断，自动推断为字面量类型true
 console.log(num);// 123
 console.log(str);// hello
 console.log(bool);// true
